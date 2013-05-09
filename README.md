@@ -1,6 +1,6 @@
 # Ans::Handlebars
 
-TODO: Write a gem description
+handlebars テンプレートを定義するための script タグを出力する view helper を提供する
 
 ## Installation
 
@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    module ApplicationHelper
+        include Ans::Handlebars
+    end
+
+    <%= handlebars do %>
+        <!-- application template -->
+    <% end %>
+    <%= handlebars "template_name" do %>
+        <!-- handlebars template -->
+    <% end %>
 
 ## Contributing
 
